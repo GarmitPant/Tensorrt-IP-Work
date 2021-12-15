@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
         #Setting up input layer 
         print("num layers:", network.num_layers)
-        network.get_input(0).shape = [batch_size, 3, 640, 640]  
+        network.get_input(0).shape = [batch_size, 3, 640, 640]  #Change according to the input layer of your model
         print(network.get_input(0).shape)
 
         #Building deserialized trt engine
